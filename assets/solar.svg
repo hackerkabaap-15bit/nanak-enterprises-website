@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#08111d"/><stop offset="1" stop-color="#17283a"/></linearGradient>
+ <linearGradient id="sun" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff1a3"/><stop offset=".5" stop-color="#f6b83f"/><stop offset="1" stop-color="#d88918"/></linearGradient>
+ <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#173c67"/><stop offset="1" stop-color="#07182d"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="14" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="700" rx="32" fill="url(#sky)"/>
+<circle cx="900" cy="150" r="85" fill="url(#sun)" filter="url(#glow)" opacity=".95"/>
+<path d="M0 500 Q180 430 330 500 T650 490 T980 470 T1200 490 V700 H0Z" fill="#09111a"/>
+<path d="M120 520 L450 390 L780 520 Z" fill="#101b29"/>
+<path d="M230 480 L475 385 L720 480" fill="none" stroke="#3a4d61" stroke-width="10"/>
+<g transform="translate(245 430) skewX(-13)">
+ <rect width="430" height="190" rx="5" fill="url(#panel)" stroke="#6d8eae" stroke-width="4"/>
+ <g stroke="#5b7694" stroke-width="2" opacity=".9">
+  <path d="M71 0V190M143 0V190M215 0V190M287 0V190M359 0V190"/>
+  <path d="M0 47H430M0 95H430M0 143H430"/>
+ </g>
+ <path d="M215 0V190" stroke="#d8a842" stroke-width="2"/>
+</g>
+<g transform="translate(785 390)">
+ <rect x="0" y="70" width="190" height="210" rx="12" fill="#f4f6f8"/>
+ <rect x="22" y="95" width="146" height="100" rx="8" fill="#0b1220"/>
+ <circle cx="48" cy="118" r="5" fill="#e9b640"/><rect x="62" y="112" width="80" height="12" rx="5" fill="#26364a"/>
+ <text x="95" y="168" text-anchor="middle" fill="#e9b640" font-family="Arial" font-weight="700" font-size="20">UTL</text>
+ <text x="95" y="218" text-anchor="middle" fill="#172234" font-family="Arial" font-weight="800" font-size="18">SOLAR</text>
+</g>
+<path d="M90 620 C260 520 420 650 610 560 S950 520 1120 600" fill="none" stroke="#dca63a" stroke-width="3" opacity=".55"/>
+</svg>
